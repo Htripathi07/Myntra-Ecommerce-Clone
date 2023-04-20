@@ -1,0 +1,80 @@
+#images :hover{
+    cursor: pointer;
+    
+
+}
+.filter-sidebar {
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    background-color: #FFFFFF;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+}
+
+#images{
+    top:10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 3%;
+    border: 1px solid grey;
+    width:100%;
+   background-color: #FFFFFF;
+/* border: 1px solid red; */
+   
+}
+
+
+#images img {
+    margin-bottom: 20px;
+    width: 80%;
+    padding:20px;
+}
+
+#type{
+    color: #989898;
+    margin-left: 10px;
+}
+
+#price{
+    font-weight: bold;
+    color:#535766;
+    margin-left: 10px;
+}
+#box2{
+    display: flex;
+   padding: 15px;
+  gap: 5px;
+  margin-left :10px;
+  text-align: center;
+}
+hoverDiv{
+    text-align: center;
+    padding-left:20px;
+}
+
+#MP{
+    color: #989898;
+  
+}
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+  .filter-sidebar {
+    flex-basis: 25%;
+    position: sticky;
+    top: 0;
+    margin-right: 10px;
+  }
+  #image{
+  flex-grow: 1;
+    }
+      .mine{
+    display: flex;
+}
+
+  
