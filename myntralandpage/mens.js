@@ -126,101 +126,81 @@ var A_shirts1 =[
   {  "price":  749},
   { "MP":  1499},
   { "offer":  50}]
-  var A_shirts17=[{ "url1": "https://m.media-amazon.com/images/I/51uuc2hjTLL._UL1182_.jpg"},
-  {"url1":"https://m.media-amazon.com/images/I/41YiRSsF9hL._UX342_.jpg" },
-  {"url1": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2050688/2022/3/11/45f11a57-c7f7-4499-9386-53fc64a1e6061646999259263-HIGHLANDER-Men-White-Slim-Fit-Casual-Shirt-7391646999259197-6.jpg"},
-  { "brand": "Nike "},
-  { "price":  529},
-  { "MP":  999},
-  { "offer":  47}]
-  var A_shirts18=[  { "url1": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/6708513/2018/6/12/759c150c-3ec2-4467-a231-aee89e913b051528800910729-Puma-Men-Tshirts-1031528800910527-1.jpg"}
-  ,{ "url1": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/17149964/2022/3/9/aa962e30-3839-4a5c-b409-27bae7abfb6b1646826338604-Difference-of-Opinion-Men-Maroon--Yellow-Cotton-Printed-Drop-1.jpg"}
-  ,{"url1": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/4/18/d4461682-e19e-46d7-b120-c58b256fe3311650284973300RoadsterMenBlackGreyCheckedCasualSustainableShirt4.jpg"},
-  { "brand": "American Bull 2 "},
-  { "price":  749},
-  { "MP":  1499},
-  { "offer":  50}]
 // async programing
 let id;
-let i = 0;
-function setmen(arr){
-    let append_data=document.getElementById("images")
-    let div1=document.createElement("div")
-    div1.setAttribute("class","div1")
-    let box = document.createElement("div")
+let i=0;
+function setmen(arr) {
+  let append_data = document.getElementById("images");
+  let div1 = document.createElement("div");
+  div1.setAttribute("class", "div1");
+  
+  // Create a container div for the box elements
+  let boxContainer = document.createElement("div");
+  boxContainer.setAttribute("class", "box-container");
 
-    
-        let img=document.createElement("img")
-       div1.id="inner_div"
-        img.id="img1"
-         id =   setInterval(function(){
-          
-            if(i=== 3) {
-                i = 0;
-            }
-         
-            console.log(arr[i].url1)
-            console.log(i)
-            img.src = arr[i].url1;
-            box2.append(price,MP,off)
-            box.append(brand,type)
-            div1.append(img,box,box2)
-            append_data.append(div1)
-            
-            i++;
-            },3000)
-      
-        console.log(arr)
-        div1.addEventListener("mouseover",function(event){
-   let hoverDiv = document.createElement("div")
-            brand.innerHTML =  `<i class="fa-solid fa-heart"></i> whishlist `; 
+  // Create the box elements and add them to the container div
+  let brand = document.createElement("h4");
+  brand.setAttribute("class", "brand");
+  brand.innerText = arr[3].brand;
+  boxContainer.appendChild(brand);
 
-            brand.setAttribute("class","brand1")
-              type.innerText = "size: 28 30 32 34 36"
-            hoverDiv.append(brand,type)
-            box.append(hoverDiv)
-        })
-     div1.addEventListener("click",function(event){
-       window.location.href = "/nav_itemsHTML/casualshirtMens.html"
-     })
-        div1.addEventListener("mouseout",function(event){
-           
-        //    itag.src = "image"
-        console.log(arr[3].brand,"this is b")
-            brand.innerText =  arr[3].brand;
-            // type.innerText  = arr[4].title;
-         
-            brand.setAttribute("class","brand2")
+  let type = document.createElement("p");
+  type.setAttribute("class", "type");
+  type.innerText = "Size: 28 30 32 34 36";
+  boxContainer.appendChild(type);
 
-        })
-            
-        let box2 = document.createElement("div")
-        box2.setAttribute("id","box2")
- let brand=document.createElement("h4")
-brand.setAttribute("id","brand")
-        let type=document.createElement("p")
-        type.setAttribute("id","type")
-        let price=document.createElement("p")
-        price.setAttribute("id","price")
-        let MP=document.createElement("s")
-        MP.setAttribute("id","MP")
-        let off=document.createElement("p")
-        off.setAttribute("id","off")
+  let price = document.createElement("p");
+  price.setAttribute("class", "price");
+  price.innerText = `RS.${arr[4].price}`;
+  boxContainer.appendChild(price);
 
-        brand.innerText = arr[3].brand;
-        // type.innerText = arr[4].title;
-        price.innerText = `RS.${arr[4].price}`
-        MP.innerText = `RS.${arr[5].MP}`;
-        off.innerText = `(${arr[6].offer}%OFF)`;
-      
-        console.log("inside") 
-        
-      div1.addEventListener("click",()=>{
-          clickFunction(arr)
-      })  
+  let MP = document.createElement("s");
+  MP.setAttribute("class", "MP");
+  MP.innerText = `RS.${arr[5].MP}`;
+  boxContainer.appendChild(MP);
 
+  let off = document.createElement("p");
+  off.setAttribute("class", "off");
+  off.innerText = `(${arr[6].offer}% OFF)`;
+  boxContainer.appendChild(off);
 
+  // Add the boxContainer div to the main div1 element
+  div1.appendChild(boxContainer);
+
+  let img = document.createElement("img");
+  img.id = "img1";
+  img.src = arr[0].url1;
+  div1.appendChild(img);
+
+let currentImageIndex=0;
+function showNextImage() {
+  if (arr[currentImageIndex].url1) {
+    img.src = arr[currentImageIndex].url1;
+  }
+  currentImageIndex = (currentImageIndex + 1) % arr.length;
 }
+
+setInterval(showNextImage, 1000);
+  div1.addEventListener("mouseover", function(event) {
+    // Change the brand and type elements on mouseover
+    brand.innerText = "♥ Wishlist";
+    type.innerText = "Available in different colors";
+  });
+
+  div1.addEventListener("click", function(event) {
+    window.location.href = "/nav_itemsHTML/casualshirtMens.html";
+  });
+
+  div1.addEventListener("mouseout", function(event) {
+    // Reset the brand and type elements on mouseout
+    brand.innerText = arr[3].brand;
+    type.innerText = "Size: 28 30 32 34 36";
+  });
+
+  div1.appendChild(boxContainer);
+  append_data.appendChild(div1);
+}
+
 
 let arrSend = JSON.parse(localStorage.getItem("tShirtKey"))||[]
 function clickFunction(arr){
@@ -253,5 +233,4 @@ setmen( A_shirts13)
 setmen(A_shirts14)
 setmen(A_shirts15)
 setmen(A_shirts16)
-setmen(A_shirts17)
-setmen(A_shirts18)  
+ 

@@ -23,6 +23,7 @@
     border: 1px solid grey;
     width:100%;
    background-color: #FFFFFF;
+   overflow: auto;
 /* border: 1px solid red; */
    
 }
@@ -34,16 +35,6 @@
     padding:20px;
 }
 
-#type{
-    color: #989898;
-    margin-left: 10px;
-}
-
-#price{
-    font-weight: bold;
-    color:#535766;
-    margin-left: 10px;
-}
 #box2{
     display: flex;
    padding: 15px;
@@ -56,10 +47,6 @@ hoverDiv{
     padding-left:20px;
 }
 
-#MP{
-    color: #989898;
-  
-}
 .container {
     display: flex;
     flex-direction: row;
@@ -77,4 +64,43 @@ hoverDiv{
     display: flex;
 }
 
+.div1 {
+    display: inline-block;
+    margin-left:10px;
+    margin-right:10px;
+    text-align: center;
+    padding: -10px;
+  }
+  
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .brand {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .type {
+    margin-bottom: 5px;
+  }
+  
+  .price {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .MP {
+    color: #aaa;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+  }
+  
+  .off {
+    color: green;
+    font-weight: bold;
+  }
   
