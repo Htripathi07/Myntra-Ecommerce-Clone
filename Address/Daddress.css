@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;
 	font-family: Arial, sans-serif;
+    background-color: #FCEEF0;
 }
 
 #submit:hover{
@@ -16,6 +17,8 @@
 form {
 	display: flex;
 	flex-direction: column;
+    background-color: #FCEEF0;
+
 }
 
 span {
@@ -36,7 +39,7 @@ input {
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 40px;
-	background-color: #f1f1f1;
+	background-color:#FCEEF0;
 	border-radius: 8px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     box-decoration-break: slice;
@@ -54,7 +57,7 @@ input {
 }
 #img{
     width: 100px;
-    background-color:  rgba(0, 0, 0, 0.1);
+    background-color:#FCEEF0;
 }
 h3 {
 	
@@ -62,7 +65,7 @@ h3 {
 }
 #paymentpage{
     padding: 8px 16px;
-	background-color:#653fff;
+	background-color:blue;
 	border: none;
     color: #fff;
     width: 50%;
@@ -74,7 +77,7 @@ h3 {
     margin-left: 25%;
 }
 #paymentpage:hover{
-   background-color: yellowgreen;
+   background-color: rgb(187, 50, 205);
 }
 #securelogo{
     display: flex;

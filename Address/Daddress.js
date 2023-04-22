@@ -28,6 +28,8 @@ alert("Fill all the Details");
 } else{
 detailArr.push(detailobj);
 
+alert("Address saved Successfully");
 localStorage.setItem("addressdetail",JSON.stringify(detailArr));
+
 }
 }
