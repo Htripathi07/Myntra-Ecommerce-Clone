@@ -23,6 +23,10 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  <link rel="stylesheet" href="navbarr.css">
   <style>
   
     #wishlistempty {
@@ -95,10 +99,518 @@
   <body>
 
 
-    <div class="nav_up">
-      <div id="navbar" > </div>
-    </div>
-    <br><br><br><br>
+
+  
+      <!-- navbar -->
+      <div class="nav_up">
+        <div id="navbar">    <div class="parent-box-1">
+  
+             
+      <div class="logo_div">
+        <a href=""> <img id="logo" src="data:image/jpeg;base64,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" alt="Myntra Logo"></a>
+      </div>
+  
+     <div class="menu_div">
+         
+          <div id="main_div">
+                <a id="button" href="/LandingPageHTML/menlandingPage.html">MENS</a>
+              <div id="akash1">
+                <div id="b">
+                   <div class="div" id="d1">
+                       <h5 class="h5"><a href="">Topwear</a></h5>
+                           <ul>
+                              <li><a href="tshirt.html">T-shirts</a></li>
+                              <li><a href="tshirt.html">Casual Shirts</a></li>
+                               <li><a href="#">Formal Shirts</a></li>
+                               <li><a href="#">Sweatshirts</a></li>
+                                <li><a href="#">Sweaters</a></li>
+                               <li><a href="#">Jackets</a></li>
+                               <li><a href="#">Blazers &amp; Coats</a></li>
+                               <li><a href="#">Suits</a></li>
+                              <li><a href="#">Rain Jackets</a></li>
+                         
+                           </ul>
+                           </div>
+                           <div id="d2">  
+                            <h5 class="h5"><a href="/">Indian &amp; Festive Wear</a></h5>
+                            <ul>
+                               <li><a href="#">Kurtas &amp; Kurta Sets</a></li>
+                               <li><a href="#">Sherwanis</a></li>
+                               <li><a href="#">Nehru Jackets</a></li>
+                               <li><a href="#">Dhotis</a></li>
+                           </ul>
+                        </div>
+                  
+                  <div id="d3">
+                     <h5 class="h5"><a href="/">Bottom Wear</a></h5>
+                     <ul>
+                      <li><a href="/nav_itemsHTML/jeansMens.html">Jeans</a></li>
+                      <li><a href="/nav_itemsHTML/casualTrauser.html">Causal Trousers</a></li>
+                      <li><a href="#">Formal Trousers</a></li>
+                      <li><a href="#">Sports</a></li>
+                      <li><a href="#">Track Pants &amp; joggers</a></li>
+                     </ul>
+  
+                     </div> 
+                     <div id="d4">
+                     <h5 class="h5"><a href="/"></a>Innerwear &amp; Joggers</h5>
+                     <ul>
+                      <li><a href="#">Briefs &amp; Trunks</a></li>
+                      <li><a href="#">Boxers</a></li>
+                      <li><a href="#">Vests</a></li>
+                      <li><a href="#">Sleepwear &amp; Loungewear</a></li>
+                      <li><a href="#">Thermals</a></li>
+                     </ul>
+                     <h5 class="h5"><a href="/"></a>Plus Size</h5>
+  
+                   </div> 
+                 
+  
+                 <div id="d5">
+                 <h5 class="h5"><a href="/">Footwear</a></h5>
+                 <ul>
+                     <li><a href="/nav_itemsHTML/casualShoesMens.html">Casual Shoes</a></li>
+                     <li><a href="/nav_itemsHTML/sportsShoesMens.html">Sports Shoes</a></li>
+                     <li><a href="#">Formal Shoes</a></li>
+                     <li><a href="#">Sneakers</a></li>
+                     <li><a href="#">Sandals &amp; Floaters</a></li>
+                     <li><a href="#">Flip Flops</a></li>
+                     <li><a href="#">Socks</a></li>
+                 </ul>
+  
+                 </div>
+                 <div id="d6">
+                 <h5 class="h5"><a href="#">Personal care &amp; Grooming</a></h5>
+                 <h5 class="h5"><a href="#">Sunglass &amp; Frames</a></h5>
+                 <h5 class="h5"><a href="#">Watches</a></h5>
+             </div>
+                 
+               </div>
+            </div>
+          
+        </div>
+    
+  
+  
+  
+  
+         <div id="main_div">
+         <a id="button" href="/LandingPageHTML/womanlandingPage.html">WOMENS</a>
+         <div id="akash2">
+           <div id="b">
+              <div class="div" id="d1">
+                  <h5 class="h5"><a href="#">Indian &amp; Fusion wear</a></h5>
+                      <ul>
+                         <li><a href="kurtawomen.html">Kurtas &amp; Suits</a></li>
+                         <li><a href="kurtawomen.html">Kurtis,Tunics &amp; Tops</a></li>
+                          <li><a href="#">Ethnic Wear</a></li>
+                          <li><a href="#">Leggings, Salwars &amp; Churidars</a></li>
+                           <li><a href="#">Skirts &amp; Palazzos</a></li>
+                          <li><a href="#">Sarees</a></li>
+                          <li><a href="#">Dress Materials</a></li>
+                          <li><a href="#">Lehenga Cholis</a></li>
+                         <li><a href="#">Dupattas &amp; Shawls</a></li>
+                      </ul>
+                      </div>
+                      <div id="d2">
+                       <h5 class="h5"><a href="#">Western wear</a></h5>
+                       <ul>
+                          <li><a href="/nav_itemsHTML/dressesWomen.html">Dresses</a></li>
+                          <li><a href="/nav_itemsHTML/topWomen.html">Tops</a></li>
+                          <li><a href="#">Tshirts</a></li>
+                          <li><a href="#">Jeans</a></li>
+                          <li><a href="#">Trousers &amp; Capris</a></li>
+                          <li><a href="#">Shorts &amp; Skirts</a></li>
+                          <li><a href="#">Co-ords</a></li>
+                          <li><a href="#">Playsuits</a></li>
+                      </ul>
+                   </div>
+             <div id="d3">
+                <h5 class="h5"><a href="#">Sport &amp; Active wear</a></h5>
+                <ul>
+                 <li><a href="#">Clothing</a></li>
+                 <li><a href="#">Footwear</a></li>
+                 <li><a href="#">Sports Accessories</a></li>
+                 <li><a href="#">Sports Equipment</a></li>
+                </ul>
+                </div>
+                <div id="d4">
+                <h5 class="h5"><a href="#"></a>Beauty &amp; Personal care</h5>
+                <ul>
+                 <li><a href="#&quot;">Makeup</a></li>
+                 <li><a href="#">Skincare</a></li>
+                 <li><a href="#">Premium Beauty</a></li>
+                 <li><a href="#">Lipsticks</a></li>
+                 <li><a href="#">Fragrances</a></li>
+                </ul>
+                <h5 class="h5"><a href="#"></a>Plus Size</h5>
+              </div>
+            <div id="d5">
+            <h5 class="h5"><a href="#">Lingerie &amp; Sleepwear</a></h5>
+            <ul>
+                <li><a href="/nav_itemsHTML/braWomen.html">Bra</a></li>
+                <li><a href="/nav_itemsHTML/briefWomen.html">Briefs</a></li>
+                <li><a href="#">Shapewear</a></li>
+                <li><a href="#">Sleepwear &amp; Loungewear</a></li>
+                <li><a href="#">Swimwear</a></li>
+                <li><a href="#">Camisoles &amp; Thermals</a></li>
+                <li><a href="#">Socks</a></li>
+            </ul>
+            </div>
+           
+          </div>
+       </div>
+     </div>
+  
+  
+  
+  
+  
+  
+     <div id="main_div">
+     <a id="button" href="/LandingPageHTML/kidslandingPage.html">KIDS</a>
+     <div id="akash3">
+       <div id="b">
+          <div class="div" id="d1">
+              <h5 class="h5"><a href="#">Boys Clothing</a></h5>
+                  <ul>
+                     <li><a href="#">T-Shirts</a></li>
+                     <li><a href="#">Shirts</a></li>
+                      <li><a href="#">Shorts</a></li>
+                      <li><a href="#">Jeans</a></li>
+                       <li><a href="#">Trousers</a></li>
+                      <li><a href="#">Clothing Sets</a></li>
+                      <li><a href="#">Ethnic Wear</a></li>
+                      <li><a href="#">Track Pants &amp; Pyjamas</a></li>
+                     <li><a href="#">Jacket, Sweater &amp; Sweatshirts</a></li>
+                     <li><a href="#">Party Wear</a></li>
+                     <li><a href="#">Innerwear &amp; Thermals</a></li>
+                    
+                  </ul>
+                  </div>
+                  <div id="d2">
+                   <h5 class="h5"><a href="#">Girls Clothing</a></h5>
+                   <ul>
+                      <li><a href="/nav_itemsHTML/dresesKids.html">Dresses</a></li>
+                      <li><a href="/nav_itemsHTML/topsKids.html">Tops</a></li>
+                      <li><a href="#">Tshirts</a></li>
+                      <li><a href="#">Clothing Sets</a></li>
+                      <li><a href="#">Lehenga choli</a></li>
+                      <li><a href="#">Kurta Sets</a></li>
+                      <li><a href="#">Party wear</a></li>
+                      <li><a href="#">Dungarees &amp; Jumpsuits</a></li>
+                      <li><a href="#">Skirts &amp; shorts</a></li>
+                      <li><a href="#">Tights &amp; Leggings</a></li>
+                   
+                  </ul>
+               </div>
+         <div id="d3">
+            <h5 class="h5"><a href="/">Footwear</a></h5>
+            <ul>
+             <li><a href="#">Casual Shoes</a></li>
+             <li><a href="#">Flipflops</a></li>
+             <li><a href="/">Sports Shoes</a></li>
+             <li><a href="/">Flats</a></li>
+             <li><a href="/">Sandals</a></li>
+             <li><a href="/">Heels</a></li>
+             <li><a href="/">School Shoes</a></li>
+             <li><a href="/">Socks</a></li>
+            </ul>
+            </div>
+            <div id="d4">
+            <h5 class="h5"><a href="#"></a>Infants</h5>
+            <ul>
+             <li><a href="#">Bodysuits</a></li>
+             <li><a href="#">Rompers &amp; Sleepsuits</a></li>
+             <li><a href="#">Clothing Sets</a></li>
+             <li><a href="#">Tshirts &amp; Tops</a></li>
+             <li><a href="#">Dresses</a></li>
+             <li><a href="#">Bottom wear</a></li>
+             <li><a href="#">Winter Wear</a></li>
+             <li><a href="#">Innerwear &amp; Sleepwear</a></li>
+             <li><a href="#">Infant Care</a></li>
+            </ul>
+            <h5 class="h5"><a href="#"></a>Plus Size</h5>
+          </div>
+        <div id="d5">
+        <h5 class="h5"><a href="#">Kids Accessories</a></h5>
+        <ul>
+            <li><a href="#">Bags &amp; Backpacks</a></li>
+            <li><a href="#">Watches</a></li>
+            <li><a href="#">Jewellery &amp; Hair accessory</a></li>
+            <li><a href="#">Sunglasses</a></li>
+            <li><a href="#">Masks &amp; Protective Gears</a></li>
+            <li><a href="#">Caps &amp; Hats</a></li>
+           
+        </ul>
+        </div>
+     
+      </div>
+   </div>
+  </div>
+  
+  
+  
+  <div id="main_div">
+  <a id="button" href="/LandingPageHTML/HomeLandingPage.html">HOME &amp; LIVING</a>
+  <div id="akash4">
+    <div id="b">
+       <div class="div" id="d1">
+           <h5 class="h5"><a href="#">Bed Linen &amp; Furnishing</a></h5>
+               <ul>
+                  <li><a href="/nav_itemsHTML/bedRunnerHome.html">Bed Runners</a></li>
+                  <li><a href="/nav_itemsHTML/mattressHome.html">Mattress Protectors</a></li>
+                   <li><a href="#">Bedsheets</a></li>
+                   <li><a href="#">Bedding Sets</a></li>
+                    <li><a href="#">Blankets, Quilts &amp; Dohars</a></li>
+                   <li><a href="#">Pillows &amp; Pillow Covers</a></li>
+                   <li><a href="#">Bed Covers</a></li>
+                   <li><a href="#">Diwan Sets</a></li>
+                  <li><a href="#">Chair Pads &amp; Covers</a></li>
+                  <li><a href="#">Sofa Covers</a></li>
+                
+               </ul>
+               </div>
+               <div id="d2">
+                <h5 class="h5"><a href="#">Bath</a></h5>
+                <ul>
+                   <li><a href="#">Bath Towels</a></li>
+                   <li><a href="#">Hand &amp; Face Towels</a></li>
+                   <li><a href="#">Beach Towels</a></li>
+                   <li><a href="#">Towels Set</a></li>
+                   <li><a href="#">Bath Rugs</a></li>
+                   <li><a href="#">Bath Robes</a></li>
+                   <li><a href="#">Bathroom Accessories</a></li>
+                   <li><a href="#">Shower Curtains</a></li>
+                
+               </ul>
+            </div>
+      <div id="d3">
+         <h5 class="h5"><a href="#">Home Décor</a></h5>
+         <ul>
+          <li><a href="/nav_itemsHTML/plantsHome.html">Plants &amp; Planters</a></li>
+          <li><a href="/nav_itemsHTML/aromasHome.html">Aromas &amp; Candles</a></li>
+          <li><a href="#">Clocks</a></li>
+          <li><a href="#">Mirrors</a></li>
+          <li><a href="#">Wall Décor</a></li>
+          <li><a href="#">Festive Decor</a></li>
+          <li><a href="#">Pooja Essentials</a></li>
+          <li><a href="#">Wall Shelves</a></li>
+          <li><a href="#">Fountains</a></li>
+          <li><a href="#">Showpieces &amp; Vases</a></li>
+         </ul>
+         </div>
+         <div id="d4">
+         <h5 class="h5"><a href="#"></a>Kitchen &amp; Table</h5>
+         <ul>
+          <li><a href="/nav_itemsHTML/bedRunnerHome.html">Table Runners</a></li>
+          <li><a href="#">Dinnerware &amp; Serveware</a></li>
+          <li><a href="#">Cups and Mugs</a></li>
+          <li><a href="#">Bakeware &amp; Cookware</a></li>
+          <li><a href="#">Kitchen Storage &amp; Tools</a></li>
+          <li><a href="#">Bar &amp; Drinkware</a></li>
+          <li><a href="#">Table Covers &amp; Furnishings</a></li>
+         
+         </ul>
+         <h5 class="h5"><a href="#"></a>Curtains</h5>
+       </div>
+     <div id="d5">
+     <h5 class="h5"><a href="#">Lamps &amp; Lighting</a></h5>
+     <ul>
+         <li><a href="#">Floor Lamps</a></li>
+         <li><a href="#">Ceiling Lamps</a></li>
+         <li><a href="#">Table Lamps</a></li>
+         <li><a href="#">Wall Lamps</a></li>
+         <li><a href="#">Outdoor Lamps</a></li>
+         <li><a href="#">String Lights</a></li>
+        
+     </ul>
+     </div>
+     
+   </div>
+  </div>
+  </div>
+  
+  
+  
+  <div id="main_div">
+  <a id="button" href="/LandingPageHTML/beautylandingPage.html">BEAUTY</a>
+  <div id="akash5">
+    <div id="b">
+       <div class="div" id="d1">
+           <h5 class="h5"><a href="#">Makeup</a></h5>
+               <ul>
+                  <li><a href="/nav_itemsHTML/lipsticBeauty.html">Lipstick</a></li>
+                  <li><a href="#&quot;">Lip Gloss</a></li>
+                   <li><a href="#">Lip Liner</a></li>
+                   <li><a href="#">Mascara</a></li>
+                    <li><a href="#">Eyeliner</a></li>
+                   <li><a href="#">Kajal</a></li>
+                   <li><a href="#">Eyeshadow</a></li>
+                   <li><a href="#">Foundation</a></li>
+                  <li><a href="#">Primer</a></li>
+                  <li><a href="#">Concealer</a></li>
+                  <li><a href="#">Compact</a></li>
+                  <li><a href="#">Nail Polish</a></li>
+                
+               </ul>
+               </div>
+               <div id="d2">
+                <h5 class="h5"><a href="#">Skincare, Bath &amp; Body</a></h5>
+                <ul>
+                   <li><a href="/nav_itemsHTML/faceBeauty.html">Face Moisturiser</a></li>
+                   <li><a href="#">Cleanser</a></li>
+                   <li><a href="#">Masks &amp; Peel</a></li>
+                   <li><a href="#">Sunscreen</a></li>
+                   <li><a href="#">Serum</a></li>
+                   <li><a href="#">Face Wash</a></li>
+                   <li><a href="#">Eye Cream</a></li>
+                   <li><a href="#">Lip Balm</a></li>
+                   <li><a href="#">Body Lotion</a></li>
+                   <li><a href="#">Body Wash</a></li>
+                   <li><a href="#">Body Scrub</a></li>
+                   <li><a href="#">Hand Cream</a></li>
+                
+               </ul>
+            </div>
+      <div id="d3">
+         <h5 class="h5"><a href="#">Haircare</a></h5>
+         <ul>
+          <li><a href="/nav_itemsHTML/shampooBeauty.html">Shampoo</a></li>
+          <li><a href="#">Conditioner</a></li>
+          <li><a href="#">Hair Cream</a></li>
+          <li><a href="#">Hair Oil</a></li>
+          <li><a href="#">Hair Gel</a></li>
+          <li><a href="#">Hair Color</a></li>
+          <li><a href="#">Hair Serum</a></li>
+          <li><a href="#">Hair Accessory</a></li>
+          
+         </ul>
+         </div>
+        
+     <div id="d5">
+     <h5 class="h5"><a href="#">Beauty Gift &amp; Makeup Set</a></h5>
+     <ul>
+         <li><a href="#">Beauty Gift</a></li>
+         <li><a href="#">Makeup Kit</a></li>
+         <li><a href="#">Trimmers</a></li>
+         <li><a href="#">Beard Oil</a></li>
+         <li><a href="#">Hair Wax</a></li>
+        
+     </ul>
+     </div>
+     <div id="d6">
+     <h5 class="h5"><a href="#">Top Brands</a></h5>
+     <ul>
+      <li><a href="/nav_itemsHTML/lakmeBeauty.html">Lakme</a></li>
+      <li><a href="#">Maybelline</a></li>
+      <li><a href="#">LOreal</a></li>
+      <li><a href="#">Philips</a></li>
+      <li><a href="#">Bath &amp; Body Works</a></li>
+      <li><a href="#">THE BODY SHOP</a></li>
+      <li><a href="#">Biotique</a></li>
+      <li><a href="#">Mamaearth</a></li>
+      <li><a href="#">MCaffeine</a></li>
+      <li><a href="#">Nivea</a></li> 
+  </ul>
+  <h5 class="h5"><a href="/">Home &amp; Bath</a></h5>
+  </div>
+   </div>
+  </div>
+  </div>
+        
+  
+  
+  <div id="main_div">      
+  <a id="button" href="/LandingPageHTML/studio.html">STUDIO<sup>New</sup></a>
+     </div>
+  </div>
+  
+  
+  </div>
+  <!-- parent-box-1 end -->
+  
+  <div class="parent-box-2">
+  
+  <div class="div1">
+      <input type="text" name="" id="search" placeholder="Search for products, brands and more">
+      
+          <span><i class="fa-solid fa-magnifying-glass">&nbsp;</i></span> 
+          
+          <div id="two"></div>
+  
+  </div>
+  
+  <div id="other_div">
+      <div>
+   
+     
+       
+  
+  
+          <div id="main_div">
+          <a href=""><i class="fa-solid fa-user" id="i2"></i></a>
+          <h5 id="profile_tag"><a href="#">Profile</a></h5>
+          <div id="akash7">
+            <div id="b">
+               <div class="div" id="d1">
+                   <h5 id="lh5">Welcome</h5>
+                   <p id="lp">To access account and manage order</p>
+                   <button id="ls"><a id="logincss" href="/login/login.html">LOGIN / SIGNUP</a></button>
+                   <br>
+                   <hr>
+                       <ul>
+                          <li><a href="/nav_itemsHTML/bedRunnerHome.html">Order</a></li>
+                          <li><a href="/cart/wishlist.html">Wishlist</a></li>
+                           <li><a href="#">Gift card</a></li>
+                           <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Myntra Insider <button id="insider_span">New</button></a></li>
+                        
+                       </ul>
+                      
+                      <hr>
+  
+                    <ul>
+                           <li><a href="/nav_itemsHTML/bedRunnerHome.html">Myntra credit</a></li>
+                             <li><a href="/nav_itemsHTML/mattressHome.html">Coupons</a></li>
+                           <li><a href="#">Saved cards</a></li>
+                           <li><a href="#">Saved Address</a></li>
+                      
+  
+  
+                       </ul></div>
+                      
+              
+         
+             
+           </div>
+          </div>
+          </div>
+          </div>
+  
+      <div>
+          <a href="wishlist.html"><i class="fa-solid fa-heart font" id="i1"><span id="count_wish">&nbsp;<span></span></span></i></a><br>
+        <a id="wishlist_tag" href="wishlist.html">Wishlist</a>
+      </div>
+  
+      <div>
+        <a id="count" href="bag.html">  <i class="fa-solid fa-bag-shopping font " id="i1"><span id="count_cart">&nbsp;</span></i></a>
+         <br>  <a id="cart_tag" href="bag.html">Bag</a>
+      </div>
+  </div>
+  
+  </div> 
+  
+  </div>
+      </div>
+      <br><br><br><br>
+    
+      <!-- navbar -->
+  
+  
+
+
+
 
     <div id="container">
       <div id="innercontainer">
@@ -131,7 +643,7 @@ if (wishlistGo.length == 0) {
   </p>
   <img src="../scripts/wishlist.PNG" alt="" />
   <br />
-  <button id="continue"><a href="/index.html">CONTINUE SHOPPING</a></button>
+  <button id="continue"><a href="#">CONTINUE SHOPPING</a></button>
 </div>`;
 } else {
   document.getElementById("myWishlist").innerText = null;
