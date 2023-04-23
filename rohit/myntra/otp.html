@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/32979f5c51.js" crossorigin="anonymous"></script>
+    <title>Otp page</title>
+
+    <style>
+        .container{
+            height:500px;
+           max-width: 25%;
+            /* max-width: fit-content; */
+            /* border: 1px solid teal; */
+            margin: auto;
+            margin-top:3%;
+            min-width:300px;
+            
+            /* min-width:80% ; */
+            /* padding: 20px; */
+            /* margin-top: 100px; */
+            background-color:white;
+            box-shadow: 0px 0px 10px 0px #000;
+            
+        }
+        #imag{
+          height: 20%;  
+          margin: auto;
+          margin-top: 15%;
+          margin-left: 15%;
+        /* color: #282c3f; */
+        
+        }
+        .h3{
+            color: #282c3f;
+               size: 20px;
+               height: 22px;
+               font-style: normal;
+              font-weight: 500;
+            margin-left: 15%;
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #div{
+            display: flex;
+            margin-left:15%;
+            justify-content: space-between;
+            margin-right: 25%;
+            margin-top: 20%;
+             
+            
+             /* size-adjust:50px; */
+        }
+        #ist,#sec,#third,#fourth{
+            /* margin-left: 15%; */
+
+            height: 30px;
+            width: 20px;
+            color:#363b53 ;
+            /* border: none; */
+            /* border-radius: 5px; */
+            text-align: center;
+            font-family: arimo;
+            font-size: 1.1rem;
+            /* display: flex; */
+            /* box-shadow: 0px 0px 5px 0px rgb(51, 43, 43); */
+
+        }
+        .h1{
+            color:#ff3f6c;
+            text-decoration: none;
+        }
+        .h2{
+            margin:auto
+        }
+        /* navbar */
+        body{
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+   #parent{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    padding-left: 30px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    
+   }
+   #logo {
+    margin-top: 22px;
+    width: 6.5%;
+   }
+   #logo img {
+   width: 100%;
+   margin-left: 25px;
+   margin-bottom: -8px;
+   margin-top: -10px;
+  
+   }
+   #mid{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 85px;
+    margin-top: 4px;
+   
+   }
+   #mid button{
+    margin-right: 13px;
+    border: none;
+   font-weight: 600;
+    background-color:white;
+    cursor: pointer;
+   }
+
+   #wish{
+    display: flex;
+    width: 15%;
+    margin-left: 10px;
+    margin-top: -4px;
+  }
+   #wish button {
+    width: 40%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+   }
+  
+ 
+   #search {
+   width: 31.5%;
+   margin-left: 20px;
+   height: 80px;
+   margin-top: 8px;
+   }
+   #search input {
+    width: 95%;
+    border: none;
+    margin-top: 13px;
+    padding: 10px;
+    background-color: #F5F5F6;
+   }
+        /* navbar */
+
+    </style>
+</head>
+<body>
+
+<!-- navbar -->
+<div id="parent">
+    <div id="logo">
+        <a href="file:///Users/onkartripathi/Desktop/myntra%20clone%20project/team8_Myntra_clone_project/Homepage.html">   <img src="data:image/jpeg;base64,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" alt="Myntra Logo">
+    </a>
+   </div>
+   <div id="mid">
+    <button>MEN</button> 
+    <button>WOMEN</button>
+    <button>KIDS</button>
+    <button>HOME & LIVING</button>
+
+    <button>STUDIO</button>
+  </div>
+  <div id="search">
+  <input  type="text" placeholder="search for products, brands & more" >
+  </div>
+  <div id="wish">
+
+<button><i class=" fa fa-regular fa-heart"></i> </button>
+<button><i class=" fa fa-light fa-bag-shopping"></i> </button> 
+      
+  </div>
+</div>
+<!-- navbar-->
+    <div class="container">
+     
+        <img id="imag"src="https://constant.myntassets.com/pwa/assets/img/3a438cb4-c9bf-4316-b60c-c63e40a1a96d1548071106233-mobile-verification.jpg" alt="">
+    <h2 class="h3">Verify with Otp</h2>
+    <div id="div" class="userInput" >
+        <input id="ist" type="text"  maxlength="1"  onkeyup="move(event,'','ist','sec')">
+        <input id="sec" type="text" maxlength="1" onkeyup="move(event,'ist','sec','third')">
+        <input id="third" type="text" maxlength="1" onkeyup="move(event,'sec','third','fourth')">
+        <input id="fourth" type="text" maxlength="1" onkeyup="move(event,'third','fourth','')">
+    </div>
+    <h5 ><a href="signup.html" class="h3 h1"> RESEND OTP</a></h5>
+    <h5 class="h3">Log in using <a class="h3 h1 h2" href="signin.html">Password</a></h5>
+    <h5 class="h3">Haveing trouble logging in ? <b class="h1 h2">Get Help</b></h5>
+    </div>
+</body>
+</html>
+<script src="otp.js" ></script>
