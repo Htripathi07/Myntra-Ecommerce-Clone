@@ -75,6 +75,7 @@ h3 {
 	cursor:auto;
 	transition: background-color 0.2s ease-in-out;
     margin-left: 25%;
+    margin-top:30px;
 }
 #paymentpage:hover{
    background-color: rgb(187, 50, 205);
@@ -99,4 +100,22 @@ h3 {
  font-size: 10px;
  font-weight: 600;
  
+}
+#cashpay{
+    font-size: small;
+    text-align: center;
+    padding: 5px;
+	background-color:#ff3fb2;
+	border: none;
+    color: #fff;
+    height: 40px;
+    width: 25%;
+    margin: auto;
+	border-radius: 5px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+	cursor:auto;
+	transition: background-color 0.2s ease-in-out;
+}
+#cashpay:hover{
+    background-color: aqua;
 }
