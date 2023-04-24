@@ -1,7 +1,7 @@
 * {
 	box-sizing: border-box;
 	font-family: Arial, sans-serif;
-    background-color: #efa5b0;
+    background-color: #fceefb;
 }
 p{
     font-style:initial;
@@ -13,7 +13,7 @@ p{
 }
 img{
     background-color: rgb(19, 69, 112);
-    margin-left: 50%;
+    margin-left: 45%;
     width: 100px;
 }
 #id{
@@ -22,13 +22,15 @@ img{
 }
 #ordetail{
     text-align: center;
+    font-size: large;
+    margin-bottom: 80px;
 }
 #Thank{
     text-align: center;
 }
 button{
     height: 40px;
-    margin-left:50%;
+    margin-left:42%;
     background-color:orangered;
     width: 200px;
     border-radius: 5px;

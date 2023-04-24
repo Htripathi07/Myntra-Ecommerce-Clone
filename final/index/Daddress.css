@@ -1,13 +1,13 @@
 * {
 	box-sizing: border-box;
 	font-family: Arial, sans-serif;
-    background-color: #FCEEF0;
+    background-color: #fceefb;
 }
 
 #submit:hover{
     background-color:rgb(95, 227, 95);
-	
     color:peachpuff;
+    background-color:  rgb(154, 203, 79);
 }
 .detail{
     display: flex;
@@ -17,8 +17,12 @@
 form {
 	display: flex;
 	flex-direction: column;
-    background-color: #FCEEF0;
+    background-color: #fceefb
 
+}
+#nav{
+    background-color:  #fceefb;
+    margin-bottom: 30px;
 }
 
 span {
@@ -39,7 +43,7 @@ input {
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 40px;
-	background-color:#FCEEF0;
+	background-color:#fceefb;
 	border-radius: 8px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     box-decoration-break: slice;
@@ -56,8 +60,9 @@ input {
 	transition: background-color 0.2s ease-in-out;
 }
 #img{
-    width: 100px;
-    background-color:#FCEEF0;
+    width: 80px;
+    padding-bottom: 20px;
+    background-color:#fceefb;
 }
 h3 {
 	
@@ -65,7 +70,7 @@ h3 {
 }
 #paymentpage{
     padding: 8px 16px;
-	background-color:blue;
+	background-color:rgb(154, 203, 79);
 	border: none;
     color: #fff;
     width: 50%;
@@ -79,16 +84,15 @@ h3 {
 }
 #paymentpage:hover{
    background-color: rgb(187, 50, 205);
+   
 }
 #securelogo{
     display: flex;
     width: 190px;
     height: 35px;
-    flex-direction: row;
-    margin-left: 80%;
-    margin-top: -50px;
-   justify-content: center;
-   justify-content:flex-end;
+    margin-left: 87%;
+    margin-top: -80px;
+    padding-bottom: 5px;
    
 }
 .securetext{
@@ -117,5 +121,5 @@ h3 {
 	transition: background-color 0.2s ease-in-out;
 }
 #cashpay:hover{
-    background-color: aqua;
+    background-color: green;
 }
