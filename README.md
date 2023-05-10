@@ -6,11 +6,11 @@ This is a clone of the Myntra e-commerce website, built using HTML,CSS and JavaS
 
 ## Collaborators
 
-- Hariom Tripathi 
-- Chirag Arora
-- Rohit Kumar Gupta
-- Md Dilnawaj Alam
-- Shubham Sharma
+- [Hariom Tripathi](https://github.com/Htripathi07)
+- [Chirag Arora](https://github.com/chiggy77)
+- [Rohit Kumar Gupta](https://github.com/rkg88092)
+- [Md Dilnawaj Alam](https://github.com/dilsah786)
+- [Shubham Sharma](https://github.com/Shubham24ap)
 
 
 ## Tech Stack
@@ -41,6 +41,8 @@ The following features have been implemented in the project:
 ## Deployed on(netlify):
  
  https://myntra8.netlify.app/
+ 
+
 
 
 
