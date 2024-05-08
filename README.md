@@ -6,14 +6,6 @@ This is a clone of the Myntra e-commerce website, built using HTML,CSS and JavaS
 
 <h1>Live Demo </h1>-- https://myntra8.netlify.app/
 
-## Collaborators
--- [Md Dilnawaz Alam](https://github.com/dilsah786)
-- [Hariom Tripathi](https://github.com/Htripathi07)
-- [Chirag Arora](https://github.com/chiggy77)
-- [Rohit Kumar Gupta](https://github.com/rkg88092)
-- [Shubham Sharma](https://github.com/Shubham24ap)
-
-
 ## Tech Stack
 - HTML
 - CSS
